@@ -1,0 +1,28 @@
+
+
+[Defines]
+INF_VERSION = 0x00010015
+VERSION_STRING = 1.0
+BASE_NAME = DemoDxe
+MODULE_TYPE = DXE_DRIVER
+FILE_GUID = accce767-8f59-478f-a536-209979cb07c4
+ENTRY_POINT = DemoDxeDriverEntryPoint
+
+[Sources]
+DemoDxe.h
+DemoDxe.c
+
+[LibraryClasses]
+UefiDriverEntryPoint
+AmiDxeLib
+AmiCspLib
+
+[Packages]
+MdePkg/MdePkg.dec
+OemPkg/OemPkg.dec
+AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+
+[Depex]
+TRUE
+

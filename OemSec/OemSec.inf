@@ -1,0 +1,22 @@
+[Defines]
+    INF_VERSION = 0x00010015
+    VERSION_STRING = 1.0
+    BASE_NAME = OemSec
+    MODULE_TYPE = SEC
+    FILE_GUID = dbc412f0-e297-4437-a970-74fee9f360bf
+    LIBRARY_CLASS = NULL
+    VERSION_STRING = 1.0
+    
+    
+[Sources]
+    WriteSec.asm
+    
+[Packages]
+    MdePkg/MdePkg.dec
+    AmiCompatibilityPkg/AmiCompatibilityPkg.dec 
+    
+[LibraryClasses]
+  
+[Ppis]
+
+[Guids]

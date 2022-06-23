@@ -1,0 +1,8 @@
+<component>
+    name = "Ppi"
+    category = ModulePart
+    LocalRoot = "OemPkg\Include\Ppi\"
+    RefName = "Ppi"
+[files]
+"ppi.h"	
+<endComponent>

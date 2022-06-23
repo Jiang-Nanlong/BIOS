@@ -1,0 +1,69 @@
+#**********************************************************************
+#**********************************************************************
+#**                                                                  **
+#**        (C)Copyright 1985-2012, American Megatrends, Inc.         **
+#**                                                                  **
+#**                       All Rights Reserved.                       **
+#**                                                                  **
+#**      5555 Oakbrook Parkway, Suite 200, Norcross, GA 30093        **
+#**                                                                  **
+#**                       Phone: (770)-246-8600                      **
+#**                                                                  **
+#**********************************************************************
+#**********************************************************************
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = OemPkg
+  PACKAGE_GUID                   = 011de228-6468-4604-a858-6416725f4137
+  PACKAGE_VERSION                = 0.1
+  
+################################################################################
+#
+# Include Section - list of Include Paths that are provided by this package.
+#                   Comments are used for Keywords and Module Types.
+#
+# Supported Module Types: 
+#  SEC PEIM DXE_DRIVER DXE_RUNTIME_DRIVER DXE_SMM_DRIVER DXE_SAL_DRIVER UEFI_DRIVER
+#
+################################################################################
+[Includes]
+  Include
+  Include/Library
+  
+  
+################################################################################
+#
+# Library Class Header section - list of Library Class header files that are
+#                                provided by this package.
+#
+################################################################################
+#[LibraryClasses]
+#  ##  @libraryclass  Provides a service to retrieve a pointer to the EFI Boot Services Table.
+#  #                  Only available to DXE and UEFI module types.
+#  #UefiBootServicesTableLib|Include/Library/UefiBootServicesTableLib.h
+#
+################################################################################
+#
+# Global Guid Definition section - list of Global Guid C Name Data Structures
+#                                  that are provided by this package.
+#
+################################################################################
+[Guids]
+
+################################################################################
+#
+# Global Ppis Definition section - list of Global Ppis C Name Data Structures
+#                                  that are provided by this package.
+#
+################################################################################
+[Ppis]
+ 
+[Protocols]
+################################################################################
+#
+# PCD Declarations section - list of all PCDs Declared by this Package
+#                            Only this package should be providing the
+#                            declaration, other packages should not.
+#
+################################################################################
+[PcdsFixedAtBuild]

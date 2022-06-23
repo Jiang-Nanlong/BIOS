@@ -1,0 +1,17 @@
+TOKEN
+    Name  = "FactorialTime_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable FactorialTime support in Project"
+    TokenType = Boolean
+    TargetMAK = Yes
+    Master = Yes
+End
+
+INFComponent
+    Name  = "FactorialTime"
+    File  = "FactorialTime.inf"
+    Package  = "OemPkg"
+    ModuleTypes  = "DXE_DRIVER"
+    Token = "FactorialTime_INF_SUPPORT" "=" "1"
+End
+

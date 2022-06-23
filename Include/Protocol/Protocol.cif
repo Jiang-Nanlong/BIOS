@@ -1,0 +1,8 @@
+<component>
+    name = "Protocol"
+    category = ModulePart
+    LocalRoot = "OemPkg\Include\Protocol\"
+    RefName = "Protocol"
+[files]
+"protocol.h"	
+<endComponent>

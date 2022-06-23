@@ -1,0 +1,33 @@
+[Defines]
+    INF_VERSION = 0x00010015
+    VERSION_STRING = 1.0
+    BASE_NAME = DivisionTime
+    MODULE_TYPE = DXE_DRIVER
+    FILE_GUID = 637d7e89-b0e9-44c4-bdb3-7166e504bce1
+    ENTRY_POINT = GetDivisionTimeEntryPoint
+
+[Sources]
+    GetDivisionTime.c
+
+[LibraryClasses]
+    UefiDriverEntryPoint
+    AmiDxeLib
+    AmiCspLib
+    IoLib
+    BaseLib
+    DebugLib
+    PciLib
+    CpuCspLib
+[Packages]
+    MdePkg/MdePkg.dec
+    OemPkg/OemPkg.dec
+    IntelFrameworkPkg/IntelFrameworkPkg.dec
+    AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+    AmiModulePkg/AmiModulePkg.dec
+    AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+    SkyBayPkg/SkyBayPkg.dec
+    AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+[Depex]
+    gEfiPciRootBridgeIoProtocolGuid
+
+    

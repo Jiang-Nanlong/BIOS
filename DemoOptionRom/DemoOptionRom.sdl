@@ -1,0 +1,17 @@
+TOKEN
+    Name  = "DemoOptionRom_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable DemoOptionRom support in Project"
+    TokenType = Boolean
+    TargetMAK = Yes
+    Master = Yes
+End
+
+INFComponent
+    Name  = "DemoOptionRom"
+    File  = "DemoOptionRom.inf"
+    Package  = "OemPkg"
+    ModuleTypes  = "DXE_DRIVER"
+    Token = "DemoOptionRom_INF_SUPPORT" "=" "1"
+End
+

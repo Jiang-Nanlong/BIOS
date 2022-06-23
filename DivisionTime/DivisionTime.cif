@@ -1,0 +1,10 @@
+<component>
+    name = "DivisionTime"
+    category = ModulePart
+    LocalRoot = "OemPkg\DivisionTime\"
+    RefName = "DivisionTime"
+[INF]
+"DivisionTime.inf"
+[files]
+"DivisionTime.sdl"	
+<endComponent>

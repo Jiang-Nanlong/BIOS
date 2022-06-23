@@ -1,0 +1,10 @@
+<component>
+    name = "DemoDxe"
+    category = ModulePart
+    LocalRoot = "OemPkg\DemoDxe\"
+    RefName = "DemoDxe"
+[INF]
+"DemoDxe.inf"
+[files]
+"DemoDxe.sdl"	
+<endComponent>

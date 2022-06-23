@@ -1,0 +1,17 @@
+TOKEN
+    Name  = "GetCpuID_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable GetCpuID support in Project"
+    TokenType = Boolean
+    TargetMAK = Yes
+    Master = Yes
+End
+
+INFComponent
+    Name  = "GetCpuID"
+    File  = "GetCpuID.inf"
+    Package  = "GetCpuID"
+    ModuleTypes  = "DXE_DRIVER"
+    Token = "GetCpuID_INF_SUPPORT" "=" "1"
+End
+

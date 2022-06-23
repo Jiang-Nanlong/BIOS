@@ -1,0 +1,10 @@
+<component>
+    name = "FactorialTime"
+    category = ModulePart
+    LocalRoot = "OemPkg\FactorialTime\"
+    RefName = "FactorialTime"
+[INF]
+"FactorialTime.inf"
+[files]
+"FactorialTime.sdl"	
+<endComponent>

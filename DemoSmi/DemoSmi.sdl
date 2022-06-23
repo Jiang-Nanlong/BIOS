@@ -1,0 +1,17 @@
+TOKEN
+    Name  = "DemoSmi_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable DemoSmi support in Project"
+    TokenType = Boolean
+    TargetMAK = Yes
+    Master = Yes
+End
+
+INFComponent
+    Name  = "DemoSmi"
+    File  = "DemoSmi.inf"
+    Package  = "OemPkg"
+    ModuleTypes = "DXE_SMM_DRIVER"
+    Token = "DemoSmi_INF_SUPPORT" "=" "1"
+End
+

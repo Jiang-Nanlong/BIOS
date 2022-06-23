@@ -1,0 +1,33 @@
+[Defines]
+    INF_VERSION = 0x00010015
+    VERSION_STRING = 1.0
+    BASE_NAME = DemoOptionRom
+    MODULE_TYPE = DXE_DRIVER
+    FILE_GUID = 1165c4cb-7786-4735-8d97-283f52fa7ba1
+    ENTRY_POINT = VerifyOpRomEntryPoint
+
+[Sources]
+    VerifyOpRom.c
+
+[LibraryClasses]
+    UefiDriverEntryPoint
+    AmiDxeLib
+    AmiCspLib
+    IoLib
+    BaseLib
+    DebugLib
+    PciLib
+
+[Packages]
+    MdePkg/MdePkg.dec
+    OemPkg/OemPkg.dec
+    IntelFrameworkPkg/IntelFrameworkPkg.dec
+    AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+    AmiModulePkg/AmiModulePkg.dec
+    AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+    SkyBayPkg/SkyBayPkg.dec
+
+[Depex]
+    gEfiPciRootBridgeIoProtocolGuid
+
+    

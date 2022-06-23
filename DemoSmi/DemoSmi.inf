@@ -1,0 +1,37 @@
+
+
+[Defines]
+INF_VERSION = 0x00010015
+VERSION_STRING = 1.0
+BASE_NAME = DemoSmi
+MODULE_TYPE = DXE_SMM_DRIVER
+FILE_GUID = fb4c35fc-28f1-4bb6-8af6-c8b55bdfe517
+ENTRY_POINT = InitDemoSmiEntryPoint
+
+[Sources]
+DemoSmi.h
+DemoSmi.c
+
+[LibraryClasses]
+ UefiDriverEntryPoint
+  AmiDxeLib
+  AmiCspLib
+ SmmServicesTableLib
+
+[Protocols]
+  gEfiSmmSwDispatch2ProtocolGuid
+  gEfiSmmSxDispatch2ProtocolGuid
+  gEfiSmmPowerButtonDispatch2ProtocolGuid
+  gEfiSmmVariableProtocolGuid
+  
+[Packages]
+MdePkg/MdePkg.dec 
+  AmiCompatibilityPkg/AmiCompatibilityPkg.dec 
+  AmiChipsetPkg/AmiChipsetPkg.dec
+  AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+  KabylakeSiliconPkg/SiPkg.dec
+
+[Depex]
+
+TRUE
+

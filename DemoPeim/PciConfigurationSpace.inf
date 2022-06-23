@@ -1,0 +1,40 @@
+//***********************************************************************
+//*                                                                     *
+//*   Copyright (c) 1985-2019, American Megatrends International LLC.   *
+//*                                                                     *
+//*      All rights reserved. Subject to AMI licensing agreement.       *
+//*                                                                     *
+//***********************************************************************
+
+
+[Defines]
+    INF_VERSION = 0x00010005
+    VERSION_STRING = 1.0
+    BASE_NAME = PciConfigurationSpace
+    MODULE_TYPE = PEIM
+    FILE_GUID = 2c7dd739-a731-46bd-b164-fc64a8c79d8c
+    ENTRY_POINT = ParseConfigurationSpaceEntryPoint
+
+[Sources]
+    ParseConfigurationSpace.c
+
+[LibraryClasses]
+    AmiPeiLib
+    AmiCspLib
+    IoLib
+    BaseLib
+    DebugLib
+    PeimEntryPoint
+
+[Packages]
+    OemPkg/OemPkg.dec
+    MdePkg/MdePkg.dec
+    IntelFrameworkPkg/IntelFrameworkPkg.dec
+    AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+    AmiModulePkg/AmiModulePkg.dec
+    AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+    SkyBayPkg/SkyBayPkg.dec
+
+[Depex]
+    TRUE
+

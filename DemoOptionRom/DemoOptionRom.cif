@@ -1,0 +1,10 @@
+<component>
+    name = "DemoOptionRom"
+    category = ModulePart
+    LocalRoot = "OemPkg\DemoOptionRom\"
+    RefName = "DemoOptionRom"
+[INF]
+"DemoOptionRom.inf"
+[files]
+"DemoOptionRom.sdl"	
+<endComponent>

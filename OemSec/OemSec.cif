@@ -1,0 +1,10 @@
+<component>
+    name = "OemSec"
+    category = ModulePart
+    LocalRoot = "OemPkg\OemSec\"
+    RefName = "OemSec"
+[INF]
+"OemSec.inf"
+[files]
+"OemSec.sdl"	
+<endComponent>

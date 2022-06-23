@@ -1,0 +1,8 @@
+TOKEN
+    Name  = "OemPkg_SUPPORT"
+    Value  = "1"
+    Help  = "Main switch to enable OemPkg support in Project"
+    TokenType = Boolean
+    TargetMAK = Yes
+    Master = Yes
+End

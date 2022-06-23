@@ -1,0 +1,62 @@
+TOKEN
+    Name  = "DemoPeim_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable DemoPeim support in Project"
+    TokenType = Boolean
+    TargetMAK = Yes
+    Master = Yes
+End
+
+INFComponent
+    Name  = "DemoPeim"
+    File  = "DemoPeim.inf"
+    Package  = "OemPkg"
+    ModuleTypes  = "PEIM"
+    Token = "DemoPeim_INF_SUPPORT" "=" "1"
+End
+
+INFComponent
+    Name  = "INF-LPCDecode"
+    File  = "INF-LPCDecode.inf"
+    Package  = "OemPkg"
+    ModuleTypes  = "PEIM"
+    Token = "INF-LPCDecode_INF_SUPPORT" "=" "1"
+End
+
+TOKEN
+    Name  = "LpcDecode_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable LpcDecode support in Project"
+    TokenType = Boolean
+End
+
+TOKEN
+    Name  = "PciConfigurationSpace_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable PciConfigurationSpace support in Project"
+    TokenType = Boolean
+End
+
+INFComponent
+    Name  = "PciConfigurationSpace"
+    File  = "PciConfigurationSpace.inf"
+    Package  = "OemPkg"
+    ModuleTypes  = "PEIM"
+    Token = "PciConfigurationSpace_INF_SUPPORT" "=" "1"
+End
+
+TOKEN
+    Name  = "KeysOfKeyboard_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable KeysOfKeyboard support in Project"
+    TokenType = Boolean
+End
+
+INFComponent
+    Name  = "KeysOfKeyboard"
+    File  = "KeysOfKeyboard.inf"
+    Package  = "OemPkg"
+    ModuleTypes  = "PEIM"
+    Token = "KeysOfKeyboard_INF_SUPPORT" "=" "1"
+End
+

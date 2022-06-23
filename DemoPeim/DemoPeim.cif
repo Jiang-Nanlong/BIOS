@@ -1,0 +1,13 @@
+<component>
+    name = "DemoPeim"
+    category = ModulePart
+    LocalRoot = "OemPkg\DemoPeim\"
+    RefName = "DemoPeim"
+[INF]
+"DemoPeim.inf"
+"LpcDecode.inf"
+"PciConfigurationSpace.inf"
+"KeysOfKeyboard.inf"
+[files]
+"DemoPeim.sdl"	
+<endComponent>

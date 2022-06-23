@@ -1,0 +1,20 @@
+<component>
+    name = "OemPkg"
+    category = Flavor
+    LocalRoot = "OemPkg\"
+    RefName = "OemPkg"
+[files]
+"OemPkg.sdl"	
+"OemPkg.dec"	
+[parts]
+"Include"
+"DemoPeim"
+"DemoDxe"
+"DemoSmi"
+"DemoOptionRom"
+"OemInt15"
+"GetCpuID"
+"DivisionTime"
+"FactorialTime"
+"OemSec"
+<endComponent>

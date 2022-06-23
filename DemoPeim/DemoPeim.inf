@@ -1,0 +1,34 @@
+
+
+[Defines]
+INF_VERSION = 0x00010015
+VERSION_STRING = 1.0
+BASE_NAME = DemoPeim
+MODULE_TYPE = PEIM
+FILE_GUID = 2df5de7e-3aa6-427f-a81d-9a176620ed06
+ENTRY_POINT = DemoPeiEntryPoint
+
+[Sources]
+DemoPeim.h
+DemoPeim.c
+
+[LibraryClasses]
+PeimEntryPoint
+AmiPeiLib
+AmiCspLib
+PciExpressLib
+PciLib
+BaseLib
+
+[Packages]
+MdePkg/MdePkg.dec
+IntelFrameworkPkg/IntelFrameworkPkg.dec
+AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+AmiModulePkg/AmiModulePkg.dec
+AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+SkyBayPkg/SkyBayPkg.dec
+
+[Depex]
+
+TRUE
+

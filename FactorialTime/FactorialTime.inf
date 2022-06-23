@@ -1,0 +1,33 @@
+[Defines]
+    INF_VERSION = 0x00010015
+    VERSION_STRING = 1.0
+    BASE_NAME = FactorialTime
+    MODULE_TYPE = DXE_DRIVER
+    FILE_GUID = d8eb0e98-384d-4323-b3ff-4248c6cb49f7
+    ENTRY_POINT = GetFactorialTimeEntryPoint
+
+[Sources]
+    GetFactorialTime.c
+
+[LibraryClasses]
+    UefiDriverEntryPoint
+    AmiDxeLib
+    AmiCspLib
+    IoLib
+    BaseLib
+    DebugLib
+    PciLib
+    CpuCspLib
+[Packages]
+    MdePkg/MdePkg.dec
+    OemPkg/OemPkg.dec
+    IntelFrameworkPkg/IntelFrameworkPkg.dec
+    AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+    AmiModulePkg/AmiModulePkg.dec
+    AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+    SkyBayPkg/SkyBayPkg.dec
+    AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+[Depex]
+    gEfiPciRootBridgeIoProtocolGuid
+
+    

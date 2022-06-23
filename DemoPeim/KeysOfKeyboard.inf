@@ -1,0 +1,40 @@
+//***********************************************************************
+//*                                                                     *
+//*   Copyright (c) 1985-2019, American Megatrends International LLC.   *
+//*                                                                     *
+//*      All rights reserved. Subject to AMI licensing agreement.       *
+//*                                                                     *
+//***********************************************************************
+
+[Defines]
+	INF_VERSION  =  0x00010005
+	VERSION_STRING  =  1.0
+	BASE_NAME  = KeysOfKeyboard
+	MODULE_TYPE = PEIM
+    FILE_GUID = bf17e6cd-7dd4-4eca-8097-25e968b7b30c
+    ENTRY_POINT = KeysOfKeyboardEntryPoint
+
+[Sources]
+    SpecialKeys.c
+
+[LibraryClasses]
+    AmiPeiLib
+    AmiCspLib
+    PciExpressLib
+    PciLib
+    BaseLib
+    DebugLib
+    IoLib
+    PeimEntryPoint
+
+[Packages]
+    MdePkg/MdePkg.dec
+    IntelFrameworkPkg/IntelFrameworkPkg.dec
+    AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+    AmiModulePkg/AmiModulePkg.dec
+    AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+    SkyBayPkg/SkyBayPkg.dec
+
+[Depex]
+    TRUE
+	

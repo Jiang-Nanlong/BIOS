@@ -1,0 +1,10 @@
+<component>
+    name = "GetCpuID"
+    category = ModulePart
+    LocalRoot = "OemPkg\GetCpuID\"
+    RefName = "GetCpuID"
+[INF]
+"GetCpuID.inf"
+[files]
+"GetCpuID.sdl"	
+<endComponent>

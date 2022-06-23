@@ -1,0 +1,33 @@
+[Defines]
+    INF_VERSION = 0x00010015
+    VERSION_STRING = 1.0
+    BASE_NAME = GetCpuID
+    MODULE_TYPE = DXE_DRIVER
+    FILE_GUID = 123480f4-1c6f-42e3-b58f-8b87f18c3f3d
+    ENTRY_POINT = GetCpuInfoEntryPoint
+
+[Sources]
+    GetCpuInfo.c
+
+[LibraryClasses]
+    UefiDriverEntryPoint
+    AmiDxeLib
+    AmiCspLib
+    IoLib
+    BaseLib
+    DebugLib
+    PciLib
+    CpuCspLib
+[Packages]
+    MdePkg/MdePkg.dec
+    OemPkg/OemPkg.dec
+    IntelFrameworkPkg/IntelFrameworkPkg.dec
+    AmiCompatibilityPkg/AmiCompatibilityPkg.dec
+    AmiModulePkg/AmiModulePkg.dec
+    AmiChipsetModulePkg/AmiChipsetModulePkg.dec
+    SkyBayPkg/SkyBayPkg.dec
+    AmiCpuModulePkg/AmiCpuModulePkg.dec
+[Depex]
+    gEfiPciRootBridgeIoProtocolGuid
+
+    

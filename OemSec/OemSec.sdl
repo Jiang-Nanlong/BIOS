@@ -1,0 +1,31 @@
+TOKEN
+    Name  = "OemSec_INF_SUPPORT"
+    Value  = "1"
+    Help  = "Main switch to enable OemSec support in Project"
+    TokenType = Boolean
+    TargetMAK = Yes
+    Master = Yes
+End
+
+INFComponent
+    Name  = "OemSec"
+    File  = "OemSec.inf"
+    Package  = "OemPkg"
+    ModuleTypes = "SEC"
+    Token = "OemSec_INF_SUPPORT" "=" "1"
+End
+
+ELINK
+    Name  = "OemSecWriteInfo"
+    Parent  = "SecPlatformLibEntry"
+    Help  = "CRB Early Init in SEC (before Cache as memory enabling)"
+    Token = "INCLUDE_NB_ASM_FILE_IN_SEC" "=" "1"
+    InvokeOrder = AfterParent
+End
+
+LibraryMapping
+    Class  = "NULL"
+    Instance  = "Oempkg.OemSec"
+    ModuleTypes  = "SEC"
+    Override  = "AmiCpuModulePkg.SecCore"
+End

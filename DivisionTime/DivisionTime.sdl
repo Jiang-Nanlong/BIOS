@@ -1,0 +1,17 @@
+TOKEN
+    Name  = "DivisionTime_INF_SUPPORT"
+    Value  = "0"
+    Help  = "Main switch to enable DivisionTime support in Project"
+    TokenType = Boolean
+    TargetMAK = Yes
+    Master = Yes
+End
+
+INFComponent
+    Name  = "DivisionTime"
+    File  = "DivisionTime.inf"
+    Package  = "DivisionTime"
+    ModuleTypes  = "DXE_DRIVER"
+    Token = "DivisionTime_INF_SUPPORT" "=" "1"
+End
+
